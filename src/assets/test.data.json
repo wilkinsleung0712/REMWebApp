@@ -1,0 +1,69 @@
+{
+  "status": 200,
+  "msg": "OK",
+  "data": {
+      "categoryResultList": [
+          {
+              "entityId": "201122",
+              "period": "201405",
+              "category": "unknown",
+              "data": [
+                  {
+                      "period": "201405",
+                      "actualMTD": 126861.38,
+                      "budgetMTD": 114627.62,
+                      "varianceDifference": 12233.76000000001,
+                      "variancePrecentage": 10.672611016437408,
+                      "comments": "waiting for implementation",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200100"
+                  },
+                  {
+                      "period": "201405",
+                      "actualMTD": 59794.99,
+                      "budgetMTD": 47115.55,
+                      "varianceDifference": 12679.439999999995,
+                      "variancePrecentage": 26.911370025394998,
+                      "comments": "waiting for implementation",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200110"
+                  },
+                  {
+                      "period": "201405",
+                      "actualMTD": 4638.7,
+                      "budgetMTD": 5275.94,
+                      "varianceDifference": -637.2399999999998,
+                      "variancePrecentage": -12.078226818348954,
+                      "comments": "waiting for implementation",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200190"
+                  },
+                  {
+                      "period": "201405",
+                      "actualMTD": 0,
+                      "budgetMTD": 7361.6,
+                      "varianceDifference": -7361.6,
+                      "variancePrecentage": -100,
+                      "comments": "waiting for implementation",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200310"
+                  },
+                  {
+                      "period": "201405",
+                      "actualMTD": -44804.01,
+                      "budgetMTD": -42006,
+                      "varianceDifference": -2798.010000000002,
+                      "variancePrecentage": 6.660977003285249,
+                      "comments": "waiting for implementation",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200350"
+                  }
+              ],
+              "totalActualMTD": 146491.06,
+              "totalBudgetMTD": 132374.71,
+              "totalVarienceDifference": 14116.350000000006,
+              "totalVariencePercentage": 10.66393271040972
+          }
+      ]
+  }
+}

@@ -1,0 +1,91 @@
+<h2 md-dialog-title>Budget Notes</h2>
+<md-dialog-content>
+  <md-card class="buget-note-card-style">
+    <md-card-content>
+      <form class="input-form">
+        <table class="input-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="Account" disabled value="200100 Office Rent">
+              </md-input-container>
+            </td>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="Basis" disabled value="Accrual">
+              </md-input-container>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="Entity" disabled value="{{data.Building}}">
+              </md-input-container>
+            </td>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="Department" disabled value="@No Department">
+              </md-input-container>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="from period" disabled value="05/14">
+              </md-input-container>
+            </td>
+            <td>
+              <md-input-container class="input-full-width">
+                <input mdInput placeholder="to period" disabled value="05/14">
+              </md-input-container>
+            </td>
+            <!-- <td>
+              <md-input-container class="md-input-has-value">
+               <md-select placeholder="Favorite food">
+              <md-option *ngFor="let food of foods" [value]="food.value">
+                {{ food.viewValue }}
+              </md-option>
+            </md-select>
+                <md-radio-group>
+                  <md-radio-button value="1">Budget</md-radio-button>
+                  <md-radio-button value="2">Variance</md-radio-button>
+                </md-radio-group>
+              </md-input-container>
+            </td> -->
+          </tr>
+          <tr>
+            <td>Note Type</td>
+            <td>
+
+              <md-radio-group>
+                <md-radio-button value="1">Budget</md-radio-button>
+                <md-radio-button value="2">Variance</md-radio-button>
+              </md-radio-group>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>View Mode</td>
+            <td>
+              <md-radio-group>
+                <md-radio-button value="1">Consolidated</md-radio-button>
+                <md-radio-button value="2">Individual/Edit</md-radio-button>
+              </md-radio-group>
+            </td>
+          </tr>
+        </table>
+
+        <md-input-container class="input-full-width">
+          <textarea mdInput placeholder="Description" name="descrption"></textarea>
+        </md-input-container>
+
+
+        <div class="button-row">
+          <button md-icon-button><md-icon>done</md-icon></button>
+          <button md-icon-button><md-icon>clear</md-icon></button>
+        </div>
+      </form>
+    </md-card-content>
+  </md-card>
+</md-dialog-content>

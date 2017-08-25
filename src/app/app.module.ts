@@ -5,6 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoogleMaterialModule } from './common/google.material.module';
+
+// material animations
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardModule } from './dashboard-module/dashboard.module';
+import { MriModule } from './mri-module/mri.module';
+import { HomeModule } from './home/home.module';
+
+// shared rxjs library
+import './shared/rxjs-extension';
 
 @NgModule({
   declarations: [
@@ -12,9 +22,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMaterialModule,
+    DashboardModule,
+    MriModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
