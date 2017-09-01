@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-// import { ColliersMRIAPIResponse } from '../model/datamodel';
+import { CategoryResult } from '../model/datamodel';
 
 @Injectable()
 export class ReportService {
   private API_BASE = 'http://localhost:8080';
   private TEST_API_BASE = 'http://firebootcamp-crm-api.azurewebsites.net/api/company';
   private API_BASE_VARIENCE_REPORT = this.API_BASE + '/report/varience/data';
+  private API_BASE_VARIENCE_NOTES = this.API_BASE + '/report/varience/notes/add';
   private headers = new Headers({ 'Content-Type': 'application/json' });
 
   constructor(private http: Http) {
@@ -19,14 +20,29 @@ export class ReportService {
       this.API_BASE_VARIENCE_REPORT,
       {
         'buildingList': [
-          '201122'
+          '200217'
         ],
-        'period': '201405',
+        'endPeriod': '200307',
         'basis': 'A',
         'finFormat': 'TEST_FORMAT'
       }
     ).map(this.extractData).catch(this.extractError);
   }
+
+  submitBudgetNote(categoryResult: CategoryResult) {
+    return this.http.post(this.API_BASE_VARIENCE_NOTES,
+      {
+        'acctnum': categoryResult.acctNum,
+        'entityid': categoryResult.entityId,
+        'department': '@',
+        'begpd': categoryResult.beginPeriod,
+        'endpd': categoryResult.endPeriod,
+        'userid':'wilkins',
+        'notetype': categoryResult.commentType,
+        'notetext': categoryResult.comments
+      }).map(this.extractData).catch(this.extractError);
+  }
+
 
   fetchTestVarienceReportData() {
     return this.http.get('./assets/test.data.json').map(this.extractData).catch(this.extractError);
@@ -35,7 +51,6 @@ export class ReportService {
   fetchTestData() {
     return this.http.get(this.API_BASE + '/test').map(this.extractData).catch(this.extractError);
   }
-
 
 
   private extractData(response: Response) {

@@ -1,3 +1,4 @@
-.buget-note-card-style{
-  box-shadow: none !important;
+.dialog-btn-row{
+  display: block;
+  width: 50%;
 }

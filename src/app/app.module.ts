@@ -15,18 +15,18 @@ import { HomeModule } from './home/home.module';
 
 // shared rxjs library
 import './shared/rxjs-extension';
+import { CommonWebAppModule } from './common/app.commond.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    HttpModule,
+    CommonWebAppModule,
     AppRoutingModule,
-    GoogleMaterialModule,
     DashboardModule,
     MriModule,
     HomeModule

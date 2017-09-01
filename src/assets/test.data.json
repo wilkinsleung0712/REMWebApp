@@ -4,66 +4,127 @@
   "data": {
       "categoryResultList": [
           {
-              "entityId": "201122",
-              "period": "201405",
+              "entityId": "200217",
               "category": "unknown",
               "data": [
                   {
-                      "period": "201405",
-                      "actualMTD": 126861.38,
-                      "budgetMTD": 114627.62,
-                      "varianceDifference": 12233.76000000001,
-                      "variancePrecentage": 10.672611016437408,
-                      "comments": "waiting for implementation",
+                      "endPeriod": "200307",
+                      "actualMTD": 1400399.67,
+                      "budgetMTD": 1391167,
+                      "varianceDifference": 9232.669999999925,
+                      "variancePrecentage": 0.6636636722981444,
+                      "comments": "Test",
+                      "noteType": "V",
+                      "period": "200307",
                       "acctDescription": "unknown",
                       "acctNum": "CI200100"
                   },
                   {
-                      "period": "201405",
-                      "actualMTD": 59794.99,
-                      "budgetMTD": 47115.55,
-                      "varianceDifference": 12679.439999999995,
-                      "variancePrecentage": 26.911370025394998,
-                      "comments": "waiting for implementation",
-                      "acctDescription": "unknown",
-                      "acctNum": "CI200110"
-                  },
-                  {
-                      "period": "201405",
-                      "actualMTD": 4638.7,
-                      "budgetMTD": 5275.94,
-                      "varianceDifference": -637.2399999999998,
-                      "variancePrecentage": -12.078226818348954,
-                      "comments": "waiting for implementation",
+                      "endPeriod": "200307",
+                      "actualMTD": 100439.42,
+                      "budgetMTD": 97084,
+                      "varianceDifference": 3355.4199999999983,
+                      "variancePrecentage": 3.456202875860078,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
                       "acctDescription": "unknown",
                       "acctNum": "CI200190"
                   },
                   {
-                      "period": "201405",
-                      "actualMTD": 0,
-                      "budgetMTD": 7361.6,
-                      "varianceDifference": -7361.6,
-                      "variancePrecentage": -100,
-                      "comments": "waiting for implementation",
+                      "endPeriod": "200307",
+                      "actualMTD": 11990,
+                      "budgetMTD": 18830,
+                      "varianceDifference": -6840,
+                      "variancePrecentage": -36.32501327668614,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200200"
+                  },
+                  {
+                      "endPeriod": "200307",
+                      "actualMTD": 7166.28,
+                      "budgetMTD": 6017,
+                      "varianceDifference": 1149.2799999999997,
+                      "variancePrecentage": 19.100548446069464,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200270"
+                  },
+                  {
+                      "endPeriod": "200307",
+                      "actualMTD": 1395.04,
+                      "budgetMTD": 1419,
+                      "varianceDifference": -23.960000000000036,
+                      "variancePrecentage": -1.688513037350249,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
                       "acctDescription": "unknown",
                       "acctNum": "CI200310"
                   },
                   {
-                      "period": "201405",
-                      "actualMTD": -44804.01,
-                      "budgetMTD": -42006,
-                      "varianceDifference": -2798.010000000002,
-                      "variancePrecentage": 6.660977003285249,
-                      "comments": "waiting for implementation",
+                      "endPeriod": "200307",
+                      "actualMTD": -18916.79,
+                      "budgetMTD": 0,
+                      "varianceDifference": -18916.79,
+                      "variancePrecentage": 0,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
                       "acctDescription": "unknown",
                       "acctNum": "CI200350"
+                  },
+                  {
+                      "endPeriod": "200307",
+                      "actualMTD": 78166.05,
+                      "budgetMTD": 60528,
+                      "varianceDifference": 17638.050000000003,
+                      "variancePrecentage": 29.14031522601111,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200110"
+                  },
+                  {
+                      "endPeriod": "200307",
+                      "actualMTD": 0,
+                      "budgetMTD": 0,
+                      "varianceDifference": 0,
+                      "variancePrecentage": 0,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200250"
+                  },
+                  {
+                      "endPeriod": "200307",
+                      "actualMTD": 7733.12,
+                      "budgetMTD": 7733,
+                      "varianceDifference": 0.11999999999989086,
+                      "variancePrecentage": 0.0015517910254738247,
+                      "comments": null,
+                      "noteType": null,
+                      "period": "200307",
+                      "acctDescription": "unknown",
+                      "acctNum": "CI200320"
                   }
               ],
-              "totalActualMTD": 146491.06,
-              "totalBudgetMTD": 132374.71,
-              "totalVarienceDifference": 14116.350000000006,
-              "totalVariencePercentage": 10.66393271040972
+              "totalActualMTD": 1588372.79,
+              "totalBudgetMTD": 1582778,
+              "totalVarienceDifference": 5594.790000000037,
+              "totalVariencePercentage": 0.35347913605066766,
+              "period": "200307"
           }
-      ]
+      ],
+      "basis": "A",
+      "beginPeriod": "200307",
+      "endPeriod": "200307"
   }
 }

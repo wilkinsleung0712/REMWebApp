@@ -16,6 +16,9 @@ export interface ColliersMRIAPIResponse {
 
 export interface VarienceReportResultList {
   categoryResultList: CategoryResultList[];
+  basis: string;
+  beginPeriod: string;
+  endPeriod: string;
 }
 
 export interface CategoryResultList {
@@ -28,18 +31,6 @@ export interface CategoryResultList {
   totalVarienceDifference: number;
   totalVariencePercentage: number;
 }
-
-// export class CategoryResultList implements CategoryResultListInterface {
-//   entityId: string;
-//   period: string;
-//   category: string;
-//   data: CategoryResult[];
-
-
-//   getData(): CategoryResult[] {
-//     return this.data['categoryResultList'];
-//   }
-// }
 
 export interface CategoryResultInterface {
   period: string;
@@ -58,16 +49,37 @@ export class CategoryResult implements CategoryResultInterface {
   budgetMTD: number;
   varienceDifference: number;
   variencePrecentage: number;
+  commentType: string;
   comments: string;
   acctNum: string;
   acctDescription: string;
 
+
   entityId: string;
   category: string;
+  basis: string;
+  beginPeriod: string;
+  endPeriod: string;
+  userId: string;
 
-  constructor(entityId: string, category: string) {
+  constructor(
+      entityId: string,
+      category: string,
+      basis: string,
+      beginPeriod: string,
+      endPeriod: string,
+      userId: string) {
     this.entityId = entityId;
     this.category = category;
+    this.basis = basis;
+    this.beginPeriod = beginPeriod;
+    this.endPeriod = endPeriod;
+    this.userId = userId;
   }
-
 }
+
+export class REMDialogData {
+  constructor(public dialogData: any, public action: string) { }
+}
+export const VIEW_ACTIONS = 'VIEW';
+export const DELETE_ACTIONS = 'DELETE';

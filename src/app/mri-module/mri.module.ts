@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 import { MriRoutingModule } from './mri-routing.module';
 import { MriComponent } from './mri-component/mri.component';
+import { CommonWebAppModule } from "app/common/app.commond.module";
 
 @NgModule({
   imports: [
-    CommonModule,
+    CommonWebAppModule,
     MriRoutingModule
   ],
   declarations: [MriComponent]

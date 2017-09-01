@@ -7,19 +7,19 @@
           <tr>
             <td>
               <md-input-container class="input-full-width">
-                <input mdInput placeholder="Account" disabled value="200100 Office Rent">
+                <input mdInput placeholder="Account" disabled value="{{data.dialogData.acctNum}}">
               </md-input-container>
             </td>
             <td>
               <md-input-container class="input-full-width">
-                <input mdInput placeholder="Basis" disabled value="Accrual">
+                <input mdInput placeholder="Basis" disabled value="{{data.dialogData.basis}}">
               </md-input-container>
             </td>
           </tr>
           <tr>
             <td>
               <md-input-container class="input-full-width">
-                <input mdInput placeholder="Entity" disabled value="{{data.Building}}">
+                <input mdInput placeholder="Entity" disabled value="{{data.dialogData.entityId}}">
               </md-input-container>
             </td>
             <td>
@@ -31,12 +31,12 @@
           <tr>
             <td>
               <md-input-container class="input-full-width">
-                <input mdInput placeholder="from period" disabled value="05/14">
+                <input mdInput placeholder="from period" disabled value="{{data.dialogData.beginPeriod}}">
               </md-input-container>
             </td>
             <td>
               <md-input-container class="input-full-width">
-                <input mdInput placeholder="to period" disabled value="05/14">
+                <input mdInput placeholder="to period" disabled value="{{data.dialogData.endPeriod}}">
               </md-input-container>
             </td>
             <!-- <td>
@@ -56,10 +56,9 @@
           <tr>
             <td>Note Type</td>
             <td>
-
-              <md-radio-group>
-                <md-radio-button value="1">Budget</md-radio-button>
-                <md-radio-button value="2">Variance</md-radio-button>
+              <md-radio-group [(ngModel)]="data.dialogData.noteType" name="noteTypeRadioBtn">
+                <md-radio-button value="B">Budget</md-radio-button>
+                <md-radio-button value="V">Variance</md-radio-button>
               </md-radio-group>
             </td>
 
@@ -68,24 +67,23 @@
           <tr>
             <td>View Mode</td>
             <td>
-              <md-radio-group>
+              <md-radio-group >
                 <md-radio-button value="1">Consolidated</md-radio-button>
-                <md-radio-button value="2">Individual/Edit</md-radio-button>
+                <md-radio-button  value="2">Individual/Edit</md-radio-button>
               </md-radio-group>
             </td>
           </tr>
         </table>
 
         <md-input-container class="input-full-width">
-          <textarea mdInput placeholder="Description" name="descrption"></textarea>
+          <textarea mdInput placeholder="Description" name="descrption" [(ngModel)]="data.dialogData.comments"></textarea>
         </md-input-container>
-
-
-        <div class="button-row">
-          <button md-icon-button><md-icon>done</md-icon></button>
-          <button md-icon-button><md-icon>clear</md-icon></button>
-        </div>
       </form>
     </md-card-content>
   </md-card>
 </md-dialog-content>
+<md-dialog-actions>
+  <!--// Can optionally provide a result for the closing dialog. -->
+  <button md-icon-button  color="primary" class="dialog-btn-row" (click)="confirmDialog(data.dialogData,'UPDATE')"><md-icon>done</md-icon></button>
+  <button md-icon-button  color="warn" class="dialog-btn-row" (click)="confirmDialog(data.dialogData,'CANCEL')"><md-icon>clear</md-icon></button>
+</md-dialog-actions>
